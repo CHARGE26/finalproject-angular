@@ -1,0 +1,103 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    font-family: initial;
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #334155;
+}
+
+ .menu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 80%;
+}
+
+.navbar .menu a {
+    text-decoration: none;
+    color: #334155;
+    font-size: 16px;
+}
+.navbar .menu .dropdown {
+    position:absolute;
+    top: 6%;
+    
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    width: 150px;
+    z-index: 1000;
+}
+.navbar .menu .dropdown a {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    color: #000;
+    text-decoration: none;
+}
+.navbar .menu .dropdown a:last-child {
+    border-bottom: none;
+}
+
+.navbar .menu:hover .dropdown {
+    display: flex;
+}
+
+.navbar .search-bar {
+    flex-grow: 1;
+    margin: 0 20px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar .search-bar input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.navbar .buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.navbar .buttons a {
+    text-decoration: none;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    font-family:initial;
+    color: #334155;
+}
+
+.navbar .buttons a.sign-up {
+    background-color: #000;
+    color: #fff;
+}
+.navbar .buttons a.icon{
+ border: 0px solid black;   
+}
+.navbar .cart {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+
+.navbar .cart i {
+    margin-right: 5px;
+}

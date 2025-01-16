@@ -1,0 +1,161 @@
+<app-header></app-header>
+<div class="homepage">
+    <div class="container">
+        <div class="content">
+          <h1>Unlock Your Potential<br>with Byway</h1>
+          <p>
+            Welcome to Byway, where learning knows no bounds. We believe that education is the key to personal and professional growth, and we're here to guide you on your journey to success. Whether you're a student, professional, or lifelong learner, our cutting-edge Learning Management System is designed to elevate your learning experience.
+          </p>
+          <button>Start your instructor journey</button>
+        </div>
+        <div class="image-container">
+          <img src="image9.png" alt="Student holding books">
+        </div>
+      </div>
+      <div class="stats-section">
+        <div class="stat">
+          <h2>250+</h2>
+          <p>Courses by our best mentors</p>
+        </div>
+        <div class="divider"></div>
+        <div class="stat">
+          <h2>1000+</h2>
+          <p>Courses by our best mentors</p>
+        </div>
+        <div class="divider"></div>
+        <div class="stat">
+          <h2>15+</h2>
+          <p>Courses by our best mentors</p>
+        </div>
+        <div class="divider"></div>
+        <div class="stat">
+          <h2>2400+</h2>
+          <p>Courses by our best mentors</p>
+        </div>
+      </div>
+    <div class="topcategories">
+        <div class="title">
+            <h2>Top Categories</h2>
+            <a href="#">See All</a>
+        </div>
+        <div class="allCategories">
+            <div class="Categories">
+                <div class="logo"><img src="Icon3.png" alt=""></div>
+                <h3>astrologi</h3>
+                <p>11 classes</p>
+            </div>
+            <div class="Categories">
+                <div class="logo"><img src="Icon4.png" alt=""></div>
+                <h3>Developer</h3>
+                <p>11 classes</p>
+            </div>
+            <div class="Categories">
+                <div class="logo"><img src="Icon-1.png" alt=""></div>
+                <h3>Marketing</h3>
+                <p>11 classes</p>
+            </div>
+            <div class="Categories">
+                <div class="logo"><img src="Icon-2.png" alt=""></div>
+                <h3>Physics</h3>
+                <p>11 classes</p>
+            </div>
+        </div>
+    <div class="topcourses">
+        <div class="title">
+            <h2>Top Courses</h2>
+            <a href="#">See All</a>
+        </div>
+        <div class="allCourses">
+            <div class="course" *ngFor ="let product of products">
+                <img [src]="product.img" alt="Product Image">
+                <div class="text">
+
+                    <h2>{{product.title}}</h2>
+                    <p>By{{product.instructor}}</p>
+                    <div class="ratings">
+                        <div class="star"></div>
+                        <div class="star"></div>
+                        <div class="star"></div>
+                        <div class="star"></div>
+                        <div class="star"></div>
+                        <p><b>{{product.stats}}</b></p>
+                    </div>
+                    <div> {{product.desc}}</div>
+                    <h2>${{product.price}}</h2>
+                </div>
+        </div>
+        </div>   
+    </div>   
+
+    <div class="topinstructors">
+        <div class="title">
+            <h2>Top Instructors</h2>
+            <a href="#">See All</a>
+        </div>
+        <div class="allinstructors">
+            <div class="instructors" *ngFor ="let instructor of instructors">
+                <img [src]="instructor.img" alt="Product Image">
+                <div class="text">
+
+                    <h2>{{instructor.name}}</h2>
+                    <p>{{instructor.proffesion}}</p>
+                        <div class="bottom">
+                            <div class="bottom-left">
+                                <div class="star"></div>
+                                <p><b>{{instructor.rating}}</b></p>
+                            </div>
+                            <div> {{instructor.studcount}}</div>
+                        </div>
+                        
+                </div>
+            </div>
+        </div>
+    </div>   
+    <div class="rewiev">
+        
+        <div class="above">
+            <h2>What Our Customer Say <br> About Us</h2>
+            <a href="">rame</a>
+        </div>
+        <div class="forflex">
+            <div class="alldescs" *ngFor ="let user of users">
+                <img src="Vector.png" alt="">
+                <div class="desc">
+                    <p>{{user.desc}}</p>
+                </div>
+                <div class="profile">
+                    <img [src]="user.img" alt="pf" width="60px" height="60px">
+                    <div class="text">
+                        <span><b>{{user.username}}</b></span>
+                        <br>
+                        <span>{{user.proffesion}}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+            <div class="homepage-last">
+                    <div class="part-1">
+                        <img src="image10.png" alt="">
+                        <div class="onlytext">
+                            <h1>Become an Instructor</h1>
+                            <p>Instructors from around the world teach millions of students on Byway. <br>
+                                 We provide the tools and skills to teach what you love.
+                            </p>
+                            <a href="">Start Your Instructor Journey</a>
+                        </div>
+                    </div>
+                        <div class="part-2">
+                            <div class="onlytext">
+                                <h1>Transform your life through education</h1>
+                                <p>Instructors from around the world teach millions of students on Byway. <br>
+                                     We provide the tools and skills to teach what you love.
+                                </p>
+                                <a href="">Checkout Courses</a>
+                            </div>
+                            <img src="image11.png" alt="">
+                    </div>
+            </div>
+</div>
+<app-footer></app-footer>

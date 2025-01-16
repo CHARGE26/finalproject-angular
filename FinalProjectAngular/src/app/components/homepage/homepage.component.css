@@ -1,0 +1,341 @@
+.homepage{
+    padding: 10px;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 10%;
+  }
+  
+  .content {
+    max-width: 500px;
+    margin-right: 30px;
+  }
+  
+  .content h1 {
+    font-size: 2.5rem;
+    color: #0F172A;
+    margin-bottom: 20px;
+    font-family: inherit;
+  }
+  
+  .content p {
+    font-size: 1rem;
+    color: #64748B;
+    font-family: inherit;
+    margin-bottom: 20px;
+    line-height: 1.6;
+  }
+  
+  .content button {
+    background-color: #2563EB;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: inherit;
+  }
+  
+  .content button:hover {
+    background-color: #0056b3;
+  }
+  
+  .image-container {
+    max-width: 300px;
+    position: relative;
+  }
+  
+  .image-container img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .image-container::before {
+    content: "";
+    position: absolute;
+    width: 500px;
+    height: 150px;
+    background: #FCA5A5;
+    border-radius: 50%;
+    top: 224px;
+    left: -50px;
+    z-index: -1;
+    transform: rotate(-5deg);
+    box-shadow: 10px 10px;
+    overflow: hidden;
+  }
+
+  .stats-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #F8FAFC;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .stat {
+    text-align: center;
+    margin: 0 20px;
+  }
+  
+  .stat h2 {
+    font-size: 2rem;
+    color: #222;
+    margin: 0;
+  }
+  
+  .stat p {
+    font-size: 0.9rem;
+    color: #555;
+    margin: 5px 0 0;
+  }
+  
+  .divider {
+    width: 5px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #E2E8F0;
+  }
+  .topcategories{
+    width: 100%;
+    text-align: center;
+  }
+  .topcategories .title{
+    display: flex;
+    justify-content: center;
+    gap: 77%;
+    align-items: center;
+    padding: 20px;
+  }
+  .topcategories .title a{
+    text-decoration: none;
+    color: #3B82F6;
+  }
+  .allCategories{
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .Categories{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #E2E8F0;
+    width: 315px;
+    height: 224px;
+    padding: 10px;
+    border-radius: 16px;
+    box-shadow: 0px 0px 5px 2px #E0F2FE;
+    gap: 8px;
+  }
+  .logo{
+    display: flex;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #E0F2FE;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  .topcourses{
+    width: 100%;
+    text-align: center;
+  }
+  .topcourses .title{
+    display: flex;
+    justify-content: center;
+    gap: 77%;
+    align-items: center;
+    padding: 20px;
+  }
+  .topcourses .title a{
+    text-decoration: none;
+    color: #3B82F6;
+  }
+
+  .allCourses{
+    display: flex;
+    justify-content: space-evenly;
+    gap:15px;
+  }
+  .course{  
+    width: 100%;
+    align-items: center;
+    border: 1px solid #E2E8F0;
+    width: 298px;
+    height: 370px;
+    padding: 10px;
+    border-radius: 16px;
+    box-shadow: 0px 0px 5px 2px #E0F2FE;
+  }
+  .text{
+    text-align: left;
+  }
+  .allCourses .course .text .ratings{
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+  }
+  
+  .topinstructors{
+    width: 100%;
+    text-align: center;
+    height: 500px;
+  }
+  .topinstructors .title{
+    display: flex;
+    justify-content: center;
+    gap: 77%;
+    align-items: center;
+    padding: 20px;
+  }
+  .topinstructors .title a{
+    text-decoration: none;
+    color: #3B82F6;
+  }
+
+  .allinstructors{
+    display: flex;
+    justify-content: space-evenly;
+    gap:15px;
+  }
+  .instructors{  
+    width: 100%;
+    align-items: center;
+    border: 1px solid #E2E8F0;
+    width: 212px;
+    height: 281px;
+    padding: 10px;
+    border-radius: 16px;
+    box-shadow: 0px 0px 5px 2px #E0F2FE;
+  }
+  .instructors .text{
+    text-align: center;
+  }
+  .instructors .text .bottom{
+    border-top: 1px solid #E2E8F0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .instructors .text .bottom .bottom-left{
+    display: flex;
+    align-items: center;
+    gap: 2px;
+  }
+  .star {
+    width: 20px;  
+    height: 20px;
+    aspect-ratio: 1;
+    background: #F8CA00;
+    clip-path: polygon(50% 0,
+      calc(50%*(1 + sin(.4turn))) calc(50%*(1 - cos(.4turn))),
+      calc(50%*(1 - sin(.2turn))) calc(50%*(1 - cos(.2turn))),
+      calc(50%*(1 + sin(.2turn))) calc(50%*(1 - cos(.2turn))),
+      calc(50%*(1 - sin(.4turn))) calc(50%*(1 - cos(.4turn))) 
+     ); 
+    /* or more simple
+    clip-path: polygon(50% 0,79% 90%,2% 35%,98% 35%,21% 90%); 
+     */
+  }
+  .rewiev{
+    height: 512px;
+    width: 100%;
+    background-color: #F8FAFC;
+    padding: 10px;
+  }
+  .homepage-last{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+  .part-1{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 500px;
+  }
+  .part-1 .onlytext{
+    text-align: left;
+  }
+  .part-1 .onlytext p {
+    color:#2f3947,
+  }
+  .part-1 .onlytext a {
+    color: white;
+    background-color: #020617;
+    width: 273px;
+    height: 48px;
+    border-radius: 8px;
+    padding: 10px 24px 10px 24px;
+    gap: 6px;
+    text-decoration: none;
+  }
+  .part-2{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 500px;
+  }
+  .part-2 .onlytext{
+    text-align: left;
+  }
+  .part-2 .onlytext p {
+    color:#2f3947,
+  }
+  .part-2 .onlytext a {
+    color: white;
+    background-color: #020617;
+    width: 273px;
+    height: 48px;
+    border-radius: 8px;
+    padding: 10px 24px 10px 24px;
+    gap: 6px;
+    text-decoration: none;
+  }
+  
+  .rewiev{
+   width: 100%;
+  }
+.alldescs{
+    width: 432px;
+    height: 276px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 5px 2px #E0F2FE;
+    justify-content: space-evenly;
+    border: 1px solid #FFFFFF;
+    border-radius: 16px;
+    padding: 24px;
+    gap: 8px;
+  }
+  .desc{
+    font-size: 24px;
+  }
+.forflex{
+  display: flex;
+  text-align: left;
+  justify-content: space-evenly;
+}
+.above{
+  display: flex;
+    justify-content: center;
+    gap: 77%;
+    text-align: left;
+    align-items: center;
+    padding: 20px;
+}
+.profile{
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 10px;
+}
+
