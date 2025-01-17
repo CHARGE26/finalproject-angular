@@ -1,6 +1,6 @@
 <app-header></app-header>
 <div class="homepage">
-    <div class="container">
+    <div class="container1">
         <div class="content">
           <h1>Unlock Your Potential<br>with Byway</h1>
           <p>
@@ -66,10 +66,15 @@
             <a href="#">See All</a>
         </div>
         <div class="allCourses">
-            <div class="course" *ngFor ="let product of products">
-                <img [src]="product.img" alt="Product Image">
+            <div class="course" *ngFor ="let product of products" >
+                <div class="container">
+                    <a href="" class="prodimg" ><img [src]="product.img" alt="Product Image"></a>
+                    <div class="overlay">
+                        <a  class="addtocartbutt" (click)="addToCart(product)"><img src="Iconcart.png" alt="iconcart"></a>
+                    </div>
+                </div>
+                    
                 <div class="text">
-
                     <h2>{{product.title}}</h2>
                     <p>By{{product.instructor}}</p>
                     <div class="ratings">

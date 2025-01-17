@@ -1,0 +1,79 @@
+.whole_cont{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 100px;
+    border-top: 1px solid gray;
+}
+.cart-container{
+    gap: 10%;
+    height: 700px;
+    width: 920px;
+    position: relative;
+    overflow-y: auto;
+}
+.cart_component{
+    display: flex;
+    border: 1px solid #E2E8F0;
+    width: 880px;
+    height: 140px;
+    padding: 10px;
+    justify-content: space-evenly;
+}
+img{
+    margin: auto;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+}
+.left span{
+    font-size: larger;
+    color: #334155;
+}
+#title{
+    font-size: xx-large;
+    color: #000000;
+}
+.buttons .Remove{
+    color:#DC2626;
+    border: 0;
+    cursor: pointer;
+    background-color: white;
+}
+.buttons{
+    display: flex;
+    gap: 10px;
+    color: #3B82F6;
+}
+.star {
+    width: 20px;  
+    height: 20px;
+    aspect-ratio: 1;
+    background: #F8CA00;
+    clip-path: polygon(50% 0,
+      calc(50%*(1 + sin(.4turn))) calc(50%*(1 - cos(.4turn))),
+      calc(50%*(1 - sin(.2turn))) calc(50%*(1 - cos(.2turn))),
+      calc(50%*(1 + sin(.2turn))) calc(50%*(1 - cos(.2turn))),
+      calc(50%*(1 - sin(.4turn))) calc(50%*(1 - cos(.4turn))) 
+     )}
+     .ratings{
+        display: flex;
+        align-items: center;
+      }
+
+h5{
+    color: #334155;
+}
+.maintitle{
+    color: #0F172A;
+}
+.header{
+    margin-left: 5%;
+}
+.whole_cont{
+    display: flex;
+    gap: 100px;
+}

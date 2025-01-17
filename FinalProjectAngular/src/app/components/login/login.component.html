@@ -1,0 +1,46 @@
+<app-header></app-header>
+<div class="userLogin">
+    
+    <form [formGroup]="loginForm" (ngSubmit)="loginProces()">
+        <h1>Sign in to your account</h1>
+        <div class="loginform"> 
+            <div class="email">
+                <label for="email">Email</label>
+                <br>
+                <br>
+                <input type="email" name="email" class="inputEmail" placeholder="Enter Your Email" formControlName="email" required>
+                <div class="loginError" *ngIf="loginForm.get('email')?.touched">
+                    <span *ngIf="loginForm.get('email')?.errors?.['required']">Email is required!</span>
+                    <span *ngIf="loginForm.get('email')?.errors?.['email']">Email is incorrect</span>
+                </div>
+            </div>
+            <div class="password">
+                <label for="password">Password</label>
+                <br>
+                <br>
+                <input type="password" class="inputPassword" name="password"  placeholder="Enter your password" formControlName="password" required>
+                <div class="loginError" *ngIf="loginForm.get('password')?.touched">
+                    <span *ngIf="loginForm.get('password')?.errors?.['required']">password is required!</span>
+                    <span *ngIf="loginForm.get('password')?.errors?.['minlength']">password is incorrect</span>
+                </div>
+            </div>
+        </div>
+        <div class="button">
+            <button type="submit">
+                Login
+            </button>
+        </div>
+    <div class="icons">
+        <div>
+            <a href="https://www.facebook.com/"><img src="Facebook_Logo_Primary 2.png" alt="">Facebook</a>
+        </div>
+        <div>
+            <a href="https://www.microsoft.com/en-us/"><img src="microsoft.png" alt="">Microsoft</a>
+        </div>
+        <div>
+            <a href="https://www.google.com/"><img src="google.png" alt="" width="24px" height="24px">Google</a>
+        </div>
+    </div>
+  </form>
+  <img src="46d740f4e31aba5b5364cdf2ea7d24db.jpg" alt="" width="628px" height="956px">
+</div>

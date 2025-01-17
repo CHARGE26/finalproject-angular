@@ -1,7 +1,7 @@
 .homepage{
     padding: 10px;
 }
-.container {
+.container1 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -54,6 +54,7 @@
     width: 100%;
     border-radius: 10px;
   }
+ 
   
   .image-container::before {
     content: "";
@@ -166,6 +167,31 @@
     justify-content: space-evenly;
     gap:15px;
   }
+  .overlay{
+    position: absolute;
+    opacity: 0;
+  }
+  .container{
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10%;
+  }
+  .container:hover .overlay{
+    transition: opacity 0.5s ease;
+    opacity: 1;
+  }
+  .container:hover .prodimg{
+    transition: opacity 0.5s ease;
+    opacity: 0;
+  }
+  /* .allCourses a img:hover{
+    transition: opacity 0.5s ease;
+    opacity: 0;
+  } */
+  
   .course{  
     width: 100%;
     align-items: center;

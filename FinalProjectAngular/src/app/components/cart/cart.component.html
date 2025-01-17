@@ -1,0 +1,39 @@
+<body>
+    <app-header></app-header>
+    <div class="header">
+        <h1 class="maintitle">Shopping Cart</h1>
+        <h5>Courses in cart</h5>
+    </div>
+    
+<div class="whole_cont">
+    <div class="cart-container">
+      <div class="cart_component" *ngFor="let item of cartItems">
+        <img [src]="item.img" alt="" width="192px" height="108px">
+        <div class="left">
+            <span id="title"><b>{{item.title}}</b></span>
+            <span>By{{item.instructor}}</span>
+            <div class="ratings">
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <p><b>{{item.stats}}</b></p>
+            </div>
+                <div class="buttons">
+                    <a>Save for later</a>
+                    <button class="Remove" (click)="removeItem(item.ID)">Remove</button>
+                </div>
+        </div>
+        
+          <div class="right">
+            <h2>{{item.price}}$</h2>
+          </div>
+        
+        </div>
+    </div>
+    <app-totalprice></app-totalprice>
+</div>
+<app-footer></app-footer>
+</body>
+

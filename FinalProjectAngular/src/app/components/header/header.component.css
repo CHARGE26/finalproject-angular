@@ -29,10 +29,9 @@
     color: #334155;
     font-size: 16px;
 }
-.navbar .menu .dropdown {
+.navbar .doropdowncat .dropdown {
     position:absolute;
     top: 6%;
-    
     background-color: #fff;
     border: 1px solid #ccc;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -41,17 +40,17 @@
     width: 150px;
     z-index: 1000;
 }
-.navbar .menu .dropdown a {
+.navbar .doropdowncat .dropdown a {
     padding: 10px;
     border-bottom: 1px solid #ccc;
     color: #000;
     text-decoration: none;
 }
-.navbar .menu .dropdown a:last-child {
+.navbar .doropdowncat .dropdown a:last-child {
     border-bottom: none;
 }
 
-.navbar .menu:hover .dropdown {
+.navbar .doropdowncat:hover .dropdown {
     display: flex;
 }
 

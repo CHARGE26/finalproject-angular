@@ -1,7 +1,6 @@
 
 
     <nav class="navbar">
-        <!-- Logo Section -->
         <div class="logo">
             <img src="logo.jpg" alt="">
             Byway
@@ -9,28 +8,25 @@
     
         <!-- Menu Links -->
         <div class="menu">
-            <a href="#">Categories</a>
-            <div class="dropdown">
-                <a href="#">Astrology</a>
-                <a href="#">Development</a>
-                <a href="#">Marketing</a>
-                <a href="#">Physics</a>
+            <div class="doropdowncat">
+                <a routerLink="">Categories</a>
+                <div class="dropdown">
+                    <a routerLink="">Astrology</a>
+                    <a routerLink="">Development</a>
+                    <a routerLink="">Marketing</a>
+                    <a routerLink="">Physics</a>
+                </div>
             </div>
             <div class="search-bar">
                 <input type="text" placeholder="Search courses">
             </div>
-            <a href="#">Teach on Byway</a>
+            <a href="">Teach on Byway</a>
         </div>
-    
-        <!-- Search Bar -->
-      
-    
-        <!-- Right-Side Buttons -->
-        
+   
         <div class="buttons">
            
-            <a href="#" class="icon"><img src="Icon.jpg" alt="cart" width="15px"></a>
-            <a href="#">Log In</a>
-            <a href="#" class="sign-up">Sign Up</a>
+            <a routerLink="/cart" class="icon"><img src="Icon.jpg" alt="cart" width="15px"></a>
+            <a routerLink="/login">Log In</a>
+            <a routerLink="" class="sign-up">Sign Up</a>
         </div>
     </nav>

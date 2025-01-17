@@ -16,7 +16,7 @@ products :Product[]=[
     img:"Rectangle1080.png"
   },
   {
-    ID: 1 ,
+    ID: 2 ,
     title : "Beginner’s Guide to Design",
     instructor : " Ronald Richards",
     stats:"(1200 Ratings)",
@@ -25,7 +25,7 @@ products :Product[]=[
     img:"Rectangle1080.png"
   },
   {
-    ID: 1 ,
+    ID: 3 ,
     title : "Beginner’s Guide to Design",
     instructor : " Ronald Richards",
     stats:"(1200 Ratings)",
@@ -34,7 +34,7 @@ products :Product[]=[
     img:"Rectangle1080.png"
   },
   {
-    ID: 1 ,
+    ID: 4 ,
     title : "Beginner’s Guide to Design",
     instructor : " Ronald Richards",
     stats:"(1200 Ratings)",
