@@ -21,20 +21,42 @@ export class LoginComponent {
   }
   initForm(){
     this.loginForm = this.fb.group({
-      email:new FormControl ('', [Validators.required, Validators.email]),
-      password:new FormControl ('', [Validators.required, Validators.minLength(6)])
+      email:['', [Validators.required, Validators.email]],
+      password:['', [Validators.required, Validators.minLength(6)]]
     });
   }
     loginProces(){
       if (this.loginForm.valid) {
-        this.authServ.login(this.loginForm.value).subscribe(res=>{
-          if (res) {
-            console.log(res);
-            alert(res.message);
-            this.route.navigate(['/homepage'])
-          }else{
-            alert(res);
-          }
+        const logindata = this.loginForm.value
+        const Storedusers = JSON.parse(localStorage.getItem('users')||'[]');
+        
+        const user  = Storedusers.find(
+          (u : {email:string;password:string})=>
+            u.email === logindata.email && u.password === logindata.password
+        );
+        if (user) {
+          console.log('Login successful:', user);
+          alert('Login successful!');
+          this.route.navigate(['/homepage']);
+        } else {
+          console.error('Invalid email or password');
+          alert('Invalid email or password. Please try again.');
+          
+        };
+       
+        this.authServ.login(this.loginForm.value).subscribe({
+          next:(res)=>{
+            console.log('login successful:',res); 
+            localStorage.setItem('token',res.access_token) 
+            this.route.navigate(['/homepage'])          
+                this.authServ.getUsers().subscribe({
+                  next:(res) =>{
+                    console.log("fetched users",res);
+                  },
+                  error:(err) => console.error("fetch failed",err)
+                });
+          },
+            error:(err) => console.error('login failed:' ,err)
         })
       }
   }

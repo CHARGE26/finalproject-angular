@@ -1,0 +1,48 @@
+<app-header></app-header>
+<div class="signupcont">
+    <img src="surati.png" alt="">
+    <div class="signupform">
+        <h1>Create Your Account</h1>
+        <form [formGroup]="signupForm" (ngSubmit)="onSubmit()">
+            <div>
+              <label>Name:</label>
+              <br>
+              <br>
+              <input type="text" formControlName="name" />
+              <div class="error" *ngIf="signupForm.get('name')?.invalid && signupForm.get('name')?.touched">
+                Name is required.
+              </div>
+            </div>
+            <div>
+              <label>Email:</label>
+              <br>
+              <br>
+              <input type="email" formControlName="email" />
+              <div class="error" *ngIf="signupForm.get('email')?.invalid && signupForm.get('email')?.touched">
+                A valid email is required.
+              </div>
+            </div>
+            <div>
+              <label>Password:</label>
+              <br><br>
+              <input type="password" formControlName="password" />
+              <div class="error" *ngIf="signupForm.get('password')?.invalid && signupForm.get('password')?.touched">
+                Password must be at least 6 characters long.
+              </div>
+            </div>
+            <button type="submit" [disabled]="signupForm.invalid">Create Account</button>
+            <div class="icons">
+                <div>
+                    <a href="https://www.facebook.com/"><img src="Facebook_Logo_Primary 2.png" alt="">Facebook</a>
+                </div>
+                <div>
+                    <a href="https://www.microsoft.com/en-us/"><img src="microsoft.png" alt="">Microsoft</a>
+                </div>
+                <div>
+                    <a href="https://www.google.com/"><img src="google.png" alt="" width="24px" height="24px">Google</a>
+                </div>
+            </div>
+          </form>
+    </div>
+</div>
+
